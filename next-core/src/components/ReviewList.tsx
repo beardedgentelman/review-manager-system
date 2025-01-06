@@ -45,7 +45,7 @@ export const ReviewList = ({reviews}: ReviewsProps) => {
 
   return (
       <div className="flex flex-col relative md:h-[70vh]">
-        <div className="md:overflow-y-auto w-full h-full scrollbar-hidden">
+        <div className="md:overflow-y-auto overflow-x-hidden w-full h-full">
           {storedReviews.map((review, i) => (
               <Fragment key={i}>
                 {

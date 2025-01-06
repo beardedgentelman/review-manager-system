@@ -10,7 +10,7 @@ import {
 
 const router = Router();
 
-router.post('/new', validate(CreateReviewSchema), createReview);
+router.post('/', validate(CreateReviewSchema), createReview);
 router.get('/', validate(GetReviewsSchema), getAllReviews);
 router.get('/:id', validate(GetReviewSchema), getReviewById);
 router.put('/:id', validate(UpdateReviewSchema), updateReview);

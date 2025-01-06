@@ -22,16 +22,18 @@ Clone the repository and install dependencies:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/beardedgentelman/review-manager-system
 
 # Navigate to the project directory
-cd your-repo
+cd review-manager-system
 
 # Install dependencies
 pnpm install:all 
 
 # Setup the database with prisma (you need to create a db file manually and specify it in the .env file)
-pnpx prisma migrate dev # Then run seed.ts file!
+cd express-api
+pnpx prisma migrate dev 
+# Then run seed.ts file if not invoked automatically!
 ```
 
 ## Running the Project

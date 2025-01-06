@@ -30,6 +30,6 @@ export const deleteReview = async (id: number) => {
 
 export const createReview = async (data: Omit<Review, 'id'>) => {
   const response =
-      await axios.post<Review>(process.env.BACKEND_API_URL + '/reviews/new', data);
+      await axios.post<Review>(process.env.BACKEND_API_URL + '/reviews', data);
   return response.data;
 };

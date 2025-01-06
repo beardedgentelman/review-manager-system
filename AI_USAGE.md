@@ -43,8 +43,3 @@ This document outlines how AI-assisted tools were utilized during the developmen
 5. **UI/UX Decisions:**
     - Customizing UI components to match the desired look and feel.
     - Designing user flows and ensuring accessibility compliance.
-
-## Summary
-
-The use of AI significantly reduced repetitive tasks and boosted productivity but was always guided by human oversight. This ensured the final product reflects a balance of automation and skilled engineering.
-

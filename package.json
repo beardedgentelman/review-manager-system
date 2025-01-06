@@ -1,0 +1,9 @@
+{
+  "name": "general",
+  "version": "1.0.0",
+  "scripts": {
+    "api": "cd express-api && pnpm dev",
+    "next": "cd next-core && pnpm dev",
+    "install:all": "cd express-api && pnpm install && cd ../next-core && pnpm install"
+  }
+}

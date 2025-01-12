@@ -1,5 +1,3 @@
-"use client";
-
 const LoadingSkeleton = ({count}: { count: number }) => {
   return (
       <div className="auto-rows-auto h-full animate-pulse">

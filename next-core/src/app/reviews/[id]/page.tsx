@@ -1,11 +1,18 @@
 import {ReviewForm} from "@/components/ReviewForm";
 import {fetchReview} from "@/lib/actions";
 import {notFound} from "next/navigation";
-
+import {MealReviewForm} from "@/components/MealReviewForm";
+import {Title} from "@/components/ui/Container";
+import {Sora} from "next/font/google";
 
 interface PageProps {
   params: Promise<{ id: string }>;
 }
+
+const sora = Sora({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 const Page = async ({params}: PageProps) => {
   const {id} = await params;
@@ -15,9 +22,10 @@ const Page = async ({params}: PageProps) => {
 
   return (
       <>
-        <h1 className="text-2xl font-bold w-full text-center mb-6">Edit the Review</h1>
+        <Title className={sora.className}>Meal Review</Title>
 
-        <ReviewForm review={data}/>
+        {/*<ReviewForm review={data}/>*/}
+        <MealReviewForm review={data}/>
       </>
   );
 };

@@ -4,7 +4,7 @@ import {useForm} from "react-hook-form";
 import {useRouter} from "next/navigation";
 import {Review} from "@/lib/types";
 import {createReview, updateReview} from "@/lib/actions";
-import {CommonButton} from "@/components/ui/CommonButton";
+import {Button} from "@/components/ui/Button";
 
 interface ReviewFormInputs {
   title: string;
@@ -83,8 +83,8 @@ export const ReviewForm = ({review}: ReviewFormProps) => {
         </div>
 
         <div className='flex justify-between'>
-          <CommonButton type="submit" label='Submit'/>
-          <CommonButton type="reset" label='Reset'/>
+          <Button type="submit"/>
+          <Button type="reset"/>
         </div>
       </form>
   );

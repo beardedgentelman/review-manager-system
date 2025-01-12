@@ -8,7 +8,7 @@ import {DashboardSearchParams} from "@/lib/types";
 import {Suspense} from "react";
 import LoadingSkeleton from "@/components/ui/LoadingSkeleton";
 import Await from "@/components/Await";
-import {CommonButton} from "@/components/ui/CommonButton";
+import {Button} from "@/components/ui/Button";
 
 interface DashboardProps {
   searchParams: Promise<DashboardSearchParams>;
@@ -24,7 +24,7 @@ const Dashboard = async ({searchParams}: DashboardProps) => {
         <div className="flex flex-col md:flex-row items-center justify-between mb-4">
           <h1 className="text-2xl font-bold">Reviews Dashboard</h1>
           <Link href="/reviews/new">
-            <CommonButton label='Add New Review'/>
+            <Button>Add New Review</Button>
           </Link>
         </div>
         <Suspense fallback={<LoadingSkeleton count={10}/>}>
